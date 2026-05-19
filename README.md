@@ -1,15 +1,15 @@
 # 🖱️ Windows Mouse Jiggler
 
-A simple, lightweight Python utility which is terminal-based mouse jiggler for Windows that simulates natural mouse movement to prevent your system from going idle or locking the screen by periodically moving the cursor.
+A simple, lightweight Python utility that is a terminal-based mouse jiggler for Windows that simulates natural mouse movement to prevent your system from going idle or locking the screen by periodically moving the cursor.
 
 ---
 
 ## Features
 
 - **Smooth, human-like movement**: interpolates cursor position with slight randomness to mimic real mouse usage.
-- **Randomized Intervals**: Changes the wait time between moves to appear less like a bot.
+- **Randomised Intervals**: Changes the wait time between moves to appear less like a bot.
 - **Screen Awareness**: Automatically detects screen resolution and keeps movement within a padded boundary.
-- **Configurable behavior**: easily tune movement speed, step count, wait intervals, and screen padding via constants at the top of the script.
+- **Configurable behaviour**: easily tune movement speed, step count, wait intervals, and screen padding via constants at the top of the script.
 - **Live status display**: shows current status (Moving/Waiting) and uptime directly in the terminal.
 - **Graceful exit**: press `q` or `x` to stop cleanly, or use `Ctrl+C` for a force quit
 - **No dependencies**: uses only Python's standard library (`ctypes`, `msvcrt`, `random`, `time`, `sys`)
@@ -19,7 +19,7 @@ A simple, lightweight Python utility which is terminal-based mouse jiggler for W
 ## Requirements
 
 - **Operating System**: Windows (uses `ctypes.windll` and `msvcrt`)
-- **Python**: 3.6 or higher (uses `tuple[int, int]` type hints)
+- **Python**: 3.10 or higher (uses `tuple[int, int]` type hints)
 - No external libraries required (uses built-in Python modules).
 
 ---
@@ -30,10 +30,9 @@ A simple, lightweight Python utility which is terminal-based mouse jiggler for W
 2. Ensure you have Python installed.
 3. Open a terminal or Command Prompt in the script's directory.
 4. Run the script:
-
-```bash
-python mouse_jiggler.py
-```
+  ```bash
+  python mouse_jiggler.py
+  ```
 
 5. Keep the terminal window **in focus** so stop-key polling works correctly.
 6. Press **`q`** or **`x`** to stop, or **`Ctrl+C`** to force quit.
@@ -69,7 +68,7 @@ All tunable parameters are defined as constants near the top of the script:
 
 ## Disclaimer
 
-This tool is intended for **legitimate personal use** such as keeping a screen active during long downloads, presentations, or remote sessions. Please ensure its use complies with your organization's IT and acceptable use policies.
+This tool is intended for **legitimate personal use** such as keeping a screen active during long downloads, presentations, or remote sessions. Please ensure its use complies with your organisation's IT and acceptable use policies.
 
 ---
 
